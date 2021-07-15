@@ -21,10 +21,10 @@ function App() {
     }
   };
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col flex-grow">
       <Nav handleClick={handleClick} />
-      {display.display}
-      <div className="flex flex-col border h-1/4 justify-end">
+      <div className="w-auto">{display.display}</div>
+      <div className="flex flex-col h-1/2 justify-end">
         <Footer />
       </div>
     </div>

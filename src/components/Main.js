@@ -34,6 +34,9 @@ const Main = () => {
                   <div className="rounded-md shadow">
                     <a
                       href="#"
+                      onClick={() =>
+                        window.open("http://www.github.com/b00000001")
+                      }
                       className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                     >
                       My Github
@@ -43,6 +46,11 @@ const Main = () => {
                     <a
                       href="#"
                       className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                      onClick={() =>
+                        window.open(
+                          "https://www.linkedin.com/in/aaron-deas-ba9908166/"
+                        )
+                      }
                     >
                       LinkedIn
                     </a>

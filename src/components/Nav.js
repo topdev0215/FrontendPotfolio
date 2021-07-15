@@ -9,24 +9,24 @@ function Nav({ handleClick }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <div className="hidden md:block">
+              <div className="hidden md:block ">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <button
                     onClick={() => handleClick("Home")}
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-xl hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Home
                   </button>
 
                   <button
                     href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-xl text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Resume
                   </button>
 
                   <button
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-xl text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     onClick={() => handleClick("Projects")}
                   >
                     Projects
