@@ -16,6 +16,11 @@ function App() {
       case "Home":
         setDisplay({ display: <Main /> });
         break;
+      case "Resume":
+        window.open(
+          "https://b00000001.github.io/personal-portfolio/cvpage.html"
+        );
+        break;
       default:
         return;
     }
