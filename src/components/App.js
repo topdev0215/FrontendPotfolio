@@ -14,6 +14,7 @@ function App() {
         break;
       case "Home":
         setDisplay({ display: <Main /> });
+        break;
       default:
         return;
     }

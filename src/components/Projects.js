@@ -1,8 +1,6 @@
-// src/components/Projects.js
-
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-// import { projects } from "../data";
+import { projects } from "../data";
 
 export default function Projects() {
   return (
@@ -20,7 +18,7 @@ export default function Projects() {
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
-          {/* {projects.map((project) => (
+          {projects.map((project) => (
             <a
               href={project.link}
               key={project.image}
@@ -43,7 +41,7 @@ export default function Projects() {
                 </div>
               </div>
             </a>
-          ))} */}
+          ))}
         </div>
       </div>
     </section>
