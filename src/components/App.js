@@ -12,6 +12,8 @@ function App() {
       case "Projects":
         setDisplay({ display: <Projects /> });
         break;
+      case "Home":
+        setDisplay({ display: <Main /> });
       default:
         return;
     }

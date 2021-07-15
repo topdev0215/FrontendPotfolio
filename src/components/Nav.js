@@ -19,10 +19,10 @@ function Nav({ handleClick }) {
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <button
-                    href="#"
+                    onClick={() => handleClick("Home")}
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Dashboard
+                    Home
                   </button>
 
                   <button
