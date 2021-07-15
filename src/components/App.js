@@ -3,6 +3,7 @@ import "../assets/css/App.css";
 import Nav from "./Nav";
 import Main from "./Main";
 import Projects from "./Projects";
+import Footer from "./Footer";
 function App() {
   const [display, setDisplay] = useState({
     display: <Main />
@@ -20,9 +21,12 @@ function App() {
     }
   };
   return (
-    <div>
+    <div className="h-screen flex flex-col">
       <Nav handleClick={handleClick} />
       {display.display}
+      <div className="flex flex-col border h-1/4 justify-end">
+        <Footer />
+      </div>
     </div>
   );
 }
