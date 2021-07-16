@@ -1,6 +1,7 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../data";
+import { projects } from "../../data";
+import "./style.css";
 
 export default function Projects() {
   return (
@@ -37,7 +38,9 @@ export default function Projects() {
                   <h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}
                   </h1>
-                  <p className="leading-relaxed">{project.description}</p>
+                  <p className="leading-relaxed leading-fixed-height">
+                    {project.description}
+                  </p>
                 </div>
               </div>
             </a>

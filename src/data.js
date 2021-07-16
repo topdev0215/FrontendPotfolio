@@ -35,5 +35,21 @@ export const projects = [
       "A weather app that makes use of the Open weather API and Javascript to display searchable weather data for some preset cities or a city of your choice. Deployed to GH pages.",
     image: project4,
     link: "https://b00000001.github.io/weather-dashboard/"
+  },
+  {
+    title: "Weather Dashboard",
+    subtitle: "Javascript, AJAX",
+    description:
+      "A weather app that makes use of the Open weather API and Javascript to display searchable weather data for some preset cities or a city of your choice. Deployed to GH pages.",
+    image: project4,
+    link: "https://b00000001.github.io/weather-dashboard/"
+  },
+  {
+    title: "Weather Dashboard",
+    subtitle: "Javascript, AJAX",
+    description:
+      "A weather app that makes use of the Open weather API and Javascript to display searchable weather data for some preset cities or a city of your choice. Deployed to GH pages.",
+    image: project4,
+    link: "https://b00000001.github.io/weather-dashboard/"
   }
 ];
