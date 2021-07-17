@@ -1,31 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [userName, setUserName] = useState({
+    value: ""
+  });
+  const handleChange = (e) => {
+    setUserName({ value: e.target.value });
+  };
+  const handleForm = (e) => {
+    e.preventDefault();
+    console.log(userName);
+  };
   return (
     <div>
       <h1>Contact Form</h1>
       <form
+        action="mailto:deas.aaron@gmail.com"
+        method="POST"
+        encType="multipart/form-data"
+        name="EmailForm"
         className="flex flex-col items-center"
-        onSubmit={() => {
-          console.log("Submit form");
-        }}
+        onSubmit={handleForm}
       >
         <label className="block w-1/2">
-          <span class="text-gray-700">Your Name:</span>
+          <span className="text-gray-700" id="contactName">
+            Your Name:
+          </span>
           <input
-            type="email"
-            class="form-input mt-1 block w-full"
+            type="text"
+            id="contactName"
+            onChange={handleChange}
+            className="form-input mt-1 block w-full"
             placeholder="Your Name Here"
           />
-          <span class="text-gray-700">E-mail</span>
+          <span className="text-gray-700">E-mail</span>
           <input
             type="email"
-            class="form-input mt-1 block w-full"
+            id="contactEmail"
+            className="form-input mt-1 block w-full"
             placeholder="john@example.com"
           />
           <span className="text-gray-700 text-xl">Enter Message:</span>
           <textarea
             className="form-textarea mt-1 block w-full"
+            id="contactMessage"
             placeholder="Enter your message here."
           />
         </label>
