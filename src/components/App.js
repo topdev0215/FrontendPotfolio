@@ -5,6 +5,7 @@ import Main from "./Main";
 import Projects from "./Projects";
 import Footer from "./Footer";
 import Contact from "./Contact";
+import About from "./About";
 function App() {
   const [display, setDisplay] = useState({
     display: <Main />
@@ -16,6 +17,9 @@ function App() {
         break;
       case "Home":
         setDisplay({ display: <Main /> });
+        break;
+      case "About":
+        setDisplay({ display: <About handleClick={handleClick} /> });
         break;
       case "Resume":
         window.open(
@@ -32,8 +36,8 @@ function App() {
   return (
     <div className="h-screen flex flex-col flex-grow">
       <Nav handleClick={handleClick} />
-      <div className="w-auto h-screen">{display.display}</div>
-      <div className="flex flex-col h-1/2 justify-end">
+      <div className="w-auto h-auto">{display.display}</div>
+      <div className="flex h-screen flex-col justify-end">
         <Footer />
       </div>
     </div>

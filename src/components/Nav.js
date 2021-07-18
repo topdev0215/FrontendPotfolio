@@ -17,22 +17,27 @@ function Nav({ handleClick }) {
                   >
                     Home
                   </button>
-
                   <button
-                    className="text-xl text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onClick={() => handleClick("About")}
+                    className="text-xl hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    About
+                  </button>
+                  <button
+                    className="text-xl hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                     onClick={() => handleClick("Resume")}
                   >
                     Resume
                   </button>
 
                   <button
-                    className="text-xl text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-xl hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                     onClick={() => handleClick("Projects")}
                   >
                     Projects
                   </button>
                   <button
-                    className="text-xl text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-xl hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                     onClick={() => handleClick("Contacts")}
                   >
                     Contact
@@ -105,16 +110,28 @@ function Nav({ handleClick }) {
                 >
                   Home
                 </button>
+                <button
+                  onClick={() => handleClick("About")}
+                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  About
+                </button>
 
-                <button className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                <button className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">
                   Resume
                 </button>
 
                 <button
                   onClick={() => handleClick("Projects")}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Projects
+                </button>
+                <button
+                  onClick={() => handleClick("Contact")}
+                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Contact
                 </button>
               </div>
             </div>
