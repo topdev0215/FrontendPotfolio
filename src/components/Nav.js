@@ -128,7 +128,7 @@ function Nav({ handleClick }) {
                   Projects
                 </button>
                 <button
-                  onClick={() => handleClick("Contact")}
+                  onClick={() => handleClick("Contacts")}
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
