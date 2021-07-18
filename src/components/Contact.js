@@ -31,8 +31,8 @@ const Contact = () => {
         e-mail. Thank you for visiting!
       </p>
 
-      <div className="flex items-center flex-col">
-        <h1 className="mt-10 text-2xl">{sendNotification}</h1>
+      <div className="flex items-center pr-40 flex-col">
+        <h1 className="mt-10 ml-20 text-xl">{sendNotification}</h1>
 
         <form className="w-1/4 contact-form" onSubmit={sendEmail}>
           <input type="hidden" name="contact_number" />
@@ -41,7 +41,7 @@ const Contact = () => {
             type="text"
             name="user_name"
             required
-            className="form-input mt-1 block w-full"
+            className="form-input mt-1 block w-auto lg:w-full"
             placeholder="John Doe"
           />
           <label className="text-xl">Email</label>
@@ -49,12 +49,12 @@ const Contact = () => {
             type="email"
             name="user_email"
             required
-            className="form-input mt-1 block w-full"
+            className="form-input mt-1 block w-auto lg:w-full"
             placeholder="john@example.com"
           />
           <label className="text-xl">Message</label>
           <textarea
-            className="form-textarea mt-1 block w-full"
+            className="form-textarea mt-1 block w-auto lg:w-full"
             name="message"
             required
             placeholder="Enter your message here."
