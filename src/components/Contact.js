@@ -40,6 +40,7 @@ const Contact = () => {
           <input
             type="text"
             name="user_name"
+            required
             className="form-input mt-1 block w-full"
             placeholder="John Doe"
           />
@@ -47,6 +48,7 @@ const Contact = () => {
           <input
             type="email"
             name="user_email"
+            required
             className="form-input mt-1 block w-full"
             placeholder="john@example.com"
           />
@@ -54,6 +56,7 @@ const Contact = () => {
           <textarea
             className="form-textarea mt-1 block w-full"
             name="message"
+            required
             placeholder="Enter your message here."
           />
           <button
