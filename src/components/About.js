@@ -10,7 +10,7 @@ const About = ({ handleClick }) => {
             Hello, My name is Aaron,
             <br className="hidden lg:inline-block" />I love Web Development!
           </h1>
-          <p className="mb-8 text-md leading-relaxed">
+          <p className="mt-4 mb-8 text-md leading-relaxed">
             I am a Full Stack Web Developer leveraging a background in IT to
             build a more intuitive user experience on the web. Recently earned a
             certificate in Full Stack Development from the University of North

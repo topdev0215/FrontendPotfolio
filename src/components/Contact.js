@@ -25,7 +25,7 @@ const Contact = () => {
 
   return (
     <div className="h-screen text-gray-400 bg-gray-900">
-      <p className="text-2xl flex justify-center text-base">
+      <p className="pt-3 text-2xl flex justify-center text-base">
         You can use this form to contact me by e-mail directly. Once you fill
         out this form press Send and your message will be sent directly to my
         e-mail. Thank you for visiting!
