@@ -14,7 +14,8 @@ export default function Projects() {
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             These are the apps I have worked on thus far in my career. More can
-            be found on my personal github!
+            be found on my personal github! Hover over each project to see a
+            description.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">

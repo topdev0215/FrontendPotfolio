@@ -3,14 +3,17 @@ import profilepic from "../assets/images/profilepic.jpg";
 
 const About = ({ handleClick }) => {
   return (
-    <section id="about" className="h-auto text-gray-400 bg-gray-900">
+    <section
+      id="about"
+      className="lg:h-screen sm:h-auto text-gray-400 bg-gray-900"
+    >
       <div className="container mx-auto flex px-10 py-10 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hello, My name is Aaron,
             <br className="hidden lg:inline-block" />I love Web Development!
           </h1>
-          <div className="flex justify-center">
+          <div className="flex py-4 justify-center">
             <button
               onClick={() => handleClick("Contacts")}
               className="px-8 py-3 border border-transparent text-base font-medium inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
