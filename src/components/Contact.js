@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import contactSvgIcon from "../assets/images/emailavatarsvgicon.svg";
 const Contact = () => {
   const [sendNotification, changeNotification] = useState("Contact Form");
   const sendEmail = (e) => {
@@ -25,16 +26,25 @@ const Contact = () => {
 
   return (
     <div className="h-screen text-gray-400 bg-gray-900">
-      <p className="pt-3 text-2xl flex justify-center text-base">
-        You can use this form to contact me by e-mail directly. Once you fill
-        out this form press Send and your message will be sent directly to my
-        e-mail. Thank you for visiting!
-      </p>
+      <div>
+        <img
+          className="h-14 flex pt-5 justify-center w-full"
+          src={contactSvgIcon}
+          alt=""
+        />
+      </div>
 
-      <div className="flex items-center pr-40 flex-col">
-        <h1 className="mt-10 ml-20 text-xl">{sendNotification}</h1>
+      <div className="flex items-center flex-col">
+        <h1 className="mt-10 text-xl">{sendNotification}</h1>
+        <div className="flex w-full w-auto justify-center">
+          <p className="pt-3 text-xl">
+            You can use this form to contact me by e-mail directly. Once you
+            fill out this form press Send and your message will be sent directly
+            to my e-mail. Thank you for visiting!
+          </p>
+        </div>
 
-        <form className="w-1/4 contact-form" onSubmit={sendEmail}>
+        <form className="w-1/2 lg:w-1/4 contact-form" onSubmit={sendEmail}>
           <input type="hidden" name="contact_number" />
           <label className="block w-1/2 text-xl">Name </label>
           <input

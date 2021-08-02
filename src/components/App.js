@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import About from "./About";
+import ResumeDownload from "./ResumeDownload";
 function App() {
   const [display, setDisplay] = useState({
     display: <Main />
@@ -22,9 +23,7 @@ function App() {
         setDisplay({ display: <About handleClick={handleClick} /> });
         break;
       case "Resume":
-        window.open(
-          "https://b00000001.github.io/personal-portfolio/cvpage.html"
-        );
+        setDisplay({ display: <ResumeDownload /> });
         break;
       case "Contacts":
         setDisplay({ display: <Contact /> });

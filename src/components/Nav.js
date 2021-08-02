@@ -120,7 +120,10 @@ function Nav({ handleClick }) {
                   About
                 </button>
 
-                <button className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">
+                <button
+                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => handleClick("Resume")}
+                >
                   Resume
                 </button>
 
