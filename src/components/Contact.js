@@ -42,8 +42,15 @@ const Contact = () => {
             fill out this form press Send and your message will be sent directly
             to my e-mail. Thank you for visiting!
           </p>
+          <br />
         </div>
 
+        <p className="mt-2">
+          My Email Address is{' '}
+          <a href="mailto:deas.aaron@gmail.com" className="hover:text-white">
+            deas.aaron@gmail.com
+          </a>
+        </p>
         <form className="w-1/2 lg:w-1/4 contact-form" onSubmit={sendEmail}>
           <input type="hidden" name="contact_number" />
           <label className="block w-1/2 text-xl">Name </label>
