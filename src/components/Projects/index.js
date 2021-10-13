@@ -1,7 +1,7 @@
-import { CodeIcon } from "@heroicons/react/solid";
-import React from "react";
-import { projects } from "../../data";
-import "./style.css";
+import { CodeIcon } from '@heroicons/react/solid';
+import React from 'react';
+import { projects } from '../../data';
+import './style.css';
 
 export default function Projects() {
   return (
@@ -13,8 +13,9 @@ export default function Projects() {
             Apps I've Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            These are the apps I have worked on thus far in my career. More can
-            be found on my personal github! Hover over each project to see a
+            These are the apps I have worked on thus far in my career. Each link
+            takes you to the project on my personal github, from there you can
+            open a working demo of the app! Hover over each project to see a
             description.
           </p>
         </div>
@@ -26,12 +27,12 @@ export default function Projects() {
               className="sm:w-1/2 w-100 p-4"
             >
               <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900">
+                  <img
+                    alt="gallery"
+                    className="absolute inset-0 w-full h-full object-cover object-center opacity-0 hover:opacity-100"
+                    src={project.image}
+                  />
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                     {project.subtitle}
                   </h2>
