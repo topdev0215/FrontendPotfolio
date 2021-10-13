@@ -1,22 +1,22 @@
-import React, { useState } from "react";
-import emailjs from "emailjs-com";
-import contactSvgIcon from "../assets/images/emailavatarsvgicon.svg";
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import contactSvgIcon from '../assets/images/emailavatarsvgicon.svg';
 const Contact = () => {
-  const [sendNotification, changeNotification] = useState("Contact Form");
+  const [sendNotification, changeNotification] = useState('Contact Form');
   const sendEmail = (e) => {
     e.preventDefault();
     console.log(e.target);
     emailjs
       .sendForm(
-        "service_1v4wbo8",
-        "contact_form",
+        'service_1v4wbo8',
+        'contact_form',
         e.target,
-        "user_RaVuwrNwH5bfd9UjZZzoh"
+        'user_RaVuwrNwH5bfd9UjZZzoh'
       )
       .then(
         (result) => {
           console.log(result.text);
-          changeNotification("E-mail Successfully Sent, thank you!");
+          changeNotification('E-mail Successfully Sent, thank you!');
         },
         (error) => {
           console.log(error.text);
@@ -36,7 +36,7 @@ const Contact = () => {
 
       <div className="flex items-center flex-col">
         <h1 className="mt-10 text-xl">{sendNotification}</h1>
-        <div className="flex w-full w-auto justify-center">
+        <div className="flex w-auto justify-center">
           <p className="pt-3 text-xl">
             You can use this form to contact me by e-mail directly. Once you
             fill out this form press Send and your message will be sent directly
