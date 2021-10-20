@@ -1,6 +1,6 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFile } from "@fortawesome/free-regular-svg-icons";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFile } from '@fortawesome/free-regular-svg-icons';
 
 const ResumeDownload = () => {
   return (
@@ -8,14 +8,14 @@ const ResumeDownload = () => {
       <iframe
         title="Resume"
         className="invisible lg:visible lg:w-1/2 lg:h-full sm:invisible"
-        src="https://docs.google.com/document/d/e/2PACX-1vS8ejoqo5OJqkUf2p3U2u3jPoiwNJypI46e-NCr0SD8Hspb7C5_OWWDV-y_DCDvtk8No-LMYu2QbsUk/pub?embedded=true"
+        src="https://docs.google.com/document/d/e/2PACX-1vQNHvgcVg-oJmFtBoFCjCt4F0k56LlRp5c4ZU7oERyn78jFRRnnU3UVWkGr-jgpmhAEzJmlTS9fwVzH/pub?embedded=true"
       ></iframe>
       <div className="flex justify-center">
         <br />
         <p
           onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/19HjOVGlLAh4OfPXCpzaBUYcC90a6IpfW/view?usp=sharing"
+              'https://drive.google.com/file/d/19HjOVGlLAh4OfPXCpzaBUYcC90a6IpfW/view?usp=sharing'
             )
           }
           className="cursor-pointer text-xl"
