@@ -30,11 +30,12 @@ export const projects = [
     link: 'https://github.com/b00000001/progressive-budget'
   },
   {
-    title: 'biOptimizers Redesign',
-    subtitle: 'Javascript, React, Tailwind CSS',
-    description: 'An exercise in modernizing a webpage using ReactJS..',
+    title: 'Weather Dashboard',
+    subtitle: 'Javascript, AJAX',
+    description:
+      'A weather app that makes use of the Open weather API and Javascript to display searchable weather data for some preset cities or a city of your choice. Deployed to GH pages.',
     image: project4,
-    link: 'https://b00000001.github.io/bioptimizers'
+    link: 'https://github.com/b00000001/weather-dashboard'
   },
   {
     title: 'Date Mate',
@@ -43,5 +44,12 @@ export const projects = [
       'HTML, CSS, and Javascript were used to create this program. The Bulma CSS framework was used to create the layout and do all of the styling. Javascript was used to dynamically create the recipe and movie suggestions once the buttons are pressed. The Spoonacular and The Movie Database APIs were used to generate the data about the food/wine and movie recommendations.',
     image: project5,
     link: 'https://github.com/b00000001/DateMate'
+  },
+  {
+    title: 'biOptimizers Redesign',
+    subtitle: 'Javascript, React, Tailwind CSS',
+    description: 'An exercise in modernizing a webpage using ReactJS..',
+    image: project4,
+    link: 'https://b00000001.github.io/bioptimizers'
   }
 ];
