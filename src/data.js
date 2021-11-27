@@ -3,6 +3,7 @@ import project2 from './assets/images/project-2.png';
 import project3 from './assets/images/project-3.png';
 import project4 from './assets/images/project-4.png';
 import project5 from './assets/images/project-5.png';
+import project6 from './assets/images/project-6.png';
 
 export const projects = [
   {
@@ -34,7 +35,7 @@ export const projects = [
     subtitle: 'Javascript, AJAX',
     description:
       'A weather app that makes use of the Open weather API and Javascript to display searchable weather data for some preset cities or a city of your choice. Deployed to GH pages.',
-    image: project4,
+    image: project6,
     link: 'https://github.com/b00000001/weather-dashboard'
   },
   {

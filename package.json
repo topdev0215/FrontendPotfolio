@@ -26,7 +26,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "craco start",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && craco start",
     "build": "craco build",
     "test": "craco test",
     "build:css": "tailwind build src/assets/css/style.css -o dist/style.css",
