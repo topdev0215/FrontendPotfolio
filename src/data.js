@@ -30,12 +30,11 @@ export const projects = [
     link: 'https://github.com/b00000001/progressive-budget'
   },
   {
-    title: 'Weather Dashboard',
-    subtitle: 'Javascript, AJAX',
-    description:
-      'A weather app that makes use of the Open weather API and Javascript to display searchable weather data for some preset cities or a city of your choice. Deployed to GH pages.',
+    title: 'biOptimizers Redesign',
+    subtitle: 'Javascript, React, Tailwind CSS',
+    description: 'An exercise in modernizing a webpage using ReactJS..',
     image: project4,
-    link: 'https://github.com/b00000001/weather-dashboard'
+    link: 'https://b00000001.github.io/bioptimizers'
   },
   {
     title: 'Date Mate',
