@@ -1,31 +1,31 @@
-import React, { useState } from "react";
-import "../assets/css/App.css";
-import Nav from "./Nav";
-import Main from "./Main";
-import Projects from "./Projects";
-import Footer from "./Footer";
-import Contact from "./Contact";
-import About from "./About";
-import ResumeDownload from "./ResumeDownload";
+import React, { useState } from 'react';
+import '../assets/css/App.css';
+import Nav from './Nav';
+import Main from './Main';
+import Projects from './Projects';
+import Footer from './Footer';
+import Contact from './Contact';
+import About from './About';
+import ResumeDownload from './ResumeDownload';
 function App() {
   const [display, setDisplay] = useState({
     display: <Main />
   });
   const handleClick = (navTarget) => {
     switch (navTarget) {
-      case "Projects":
+      case 'Projects':
         setDisplay({ display: <Projects /> });
         break;
-      case "Home":
+      case 'Home':
         setDisplay({ display: <Main /> });
         break;
-      case "About":
+      case 'About':
         setDisplay({ display: <About handleClick={handleClick} /> });
         break;
-      case "Resume":
+      case 'Resume':
         setDisplay({ display: <ResumeDownload /> });
         break;
-      case "Contacts":
+      case 'Contacts':
         setDisplay({ display: <Contact /> });
         break;
       default:
@@ -33,10 +33,10 @@ function App() {
     }
   };
   return (
-    <div className="h-screen flex flex-col flex-grow">
+    <div className="h-screen flex flex-col">
       <Nav handleClick={handleClick} />
-      <div className="w-auto h-auto">{display.display}</div>
-      <div className="flex h-screen flex-col justify-end">
+      {display.display}
+      <div className="flex flex-col justify-end">
         <Footer />
       </div>
     </div>

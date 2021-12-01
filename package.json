@@ -24,7 +24,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "SET NODE_OPTIONS=--openssl-legacy-provider && npm run build",
     "deploy": "gh-pages -d build",
     "start": "SET NODE_OPTIONS=--openssl-legacy-provider && craco start",
     "build": "craco build",

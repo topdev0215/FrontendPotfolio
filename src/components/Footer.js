@@ -1,9 +1,11 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-  const element = <FontAwesomeIcon icon={faLinkedin} color="white" />;
+  const element = (
+    <FontAwesomeIcon className="ml-4" icon={faLinkedin} color="white" />
+  );
   return (
     <div>
       <div className="text-xs flex justify-center items-center h-16 bg-black text-white">
@@ -15,7 +17,7 @@ const Footer = () => {
         <span
           className="ml-1 cursor-pointer"
           onClick={() =>
-            window.open("https://www.linkedin.com/in/aaron-deas-ba9908166/")
+            window.open('https://www.linkedin.com/in/aaron-deas-ba9908166/')
           }
         >
           {element}
