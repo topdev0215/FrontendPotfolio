@@ -30,7 +30,7 @@ const Main = () => {
                   <div className="flex flex-col">
                     Web Design based in the eastern US. Highly experienced in
                     Full stack web development.
-                    <cite className="border-2 w-1/4 text-2xl text-black">
+                    <cite className="w-1/4 text-2xl text-black">
                       Aaron Deas
                     </cite>
                   </div>
