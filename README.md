@@ -40,10 +40,10 @@ Contributions are what make the open source community such an amazing place to b
 
 # Collaborators
 
-1.  b00000001 (http://www.github.com/b00000001)
+1.  Hirakawa (http://www.github.com/hirakawa0215)
 
 # Questions
 
-Please visit my github to learn more: <a href='http://github.com/b00000001'>My Github</a>
+Please visit my github to learn more: <a href='http://github.com/hirakawa0215'>My Github</a>
 
-- If you have any questions for me, please contact me at deas.aaron@gmail.com
+- If you have any questions for me, please contact me at deas.hirakawatsuneteru@gmail.com
