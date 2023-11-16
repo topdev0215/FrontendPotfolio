@@ -46,4 +46,4 @@ Contributions are what make the open source community such an amazing place to b
 
 Please visit my github to learn more: <a href='http://github.com/hirakawa0215'>My Github</a>
 
-- If you have any questions for me, please contact me at deas.hirakawatsuneteru@gmail.com
+- If you have any questions for me, please contact me at hirakawatsuneteru@gmail.com
